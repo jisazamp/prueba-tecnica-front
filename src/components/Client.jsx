@@ -1,7 +1,11 @@
 import PropTypes from 'prop-types';
 
-const Client = ({ client }) => {
-  return <div>{`${client.name}, $${client.budget}`}</div>;
+const Client = ({ client, onChocolateFeast }) => {
+  return (
+    <div
+      onClick={() => onChocolateFeast(client.id)}
+    >{`${client.name}, $${client.budget}`}</div>
+  );
 };
 
 Client.propTypes = {

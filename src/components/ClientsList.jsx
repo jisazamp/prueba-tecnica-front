@@ -3,11 +3,17 @@ import PropTypes from 'prop-types';
 import Client from './Client';
 import ClientForm from './ClientForm';
 
-const ClientsList = ({ form, clients, onClientSubmit, setForm }) => {
+const ClientsList = ({
+  form,
+  clients,
+  onClientSubmit,
+  onChocolateFeast,
+  setForm,
+}) => {
   return (
     <div className='content-container'>
       {clients.map((e) => (
-        <Client key={e.id} client={e} />
+        <Client key={e.id} client={e} onChocolateFeast={onChocolateFeast} />
       ))}
 
       {!form && (
