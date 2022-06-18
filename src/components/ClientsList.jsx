@@ -1,14 +1,11 @@
-import { useState } from 'react';
 import PropTypes from 'prop-types';
 
 import Client from './Client';
 import ClientForm from './ClientForm';
 
-const ClientsList = ({ clients, onClientSubmit }) => {
-  const [form, setForm] = useState(false);
-
+const ClientsList = ({ form, clients, onClientSubmit, setForm }) => {
   return (
-    <div className='users-container'>
+    <div className='content-container'>
       {clients.map((e) => (
         <Client key={e.id} client={e} />
       ))}

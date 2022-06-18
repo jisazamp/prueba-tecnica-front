@@ -45,13 +45,13 @@ body {
   text-align: center;
 }
 
-.users-container {
+.content-container {
   background-color: white;
   padding: 0.8em 1em;
   border-radius: 0.5em;
   width: 90%;
   max-width: 40rem;
-  margin: auto;
+  margin: 1rem auto;
 }
 
 .form-container {
