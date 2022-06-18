@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Kumbh+Sans:wght@400;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Kumbh Sans', sans;
+  background-color: hsl(217, 54%, 11%);
+}
+
+.dark {
+  color: hsl(178, 100%, 50%);
+}
+
+.white {
+  color: white;
+}
+
+.container {
+  max-width: 100rem;
+  margin: auto;
+}
+
+.header {
+  font-weight: 900;
+  text-align: center;
+}
+
+.users-container {
+  background-color: white;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  width: 90%;
+  max-width: 40rem;
+  margin: auto;
+}
