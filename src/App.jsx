@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 import Header from './components/common/Header';
 import ClientsList from './components/ClientsList';
-import StoresList from './components/StoresList';
+import Wraps from './components/Wraps';
 import ClientForm from './components/ClientForm';
 import ChocolateFeast from './components/ChocolateFeast';
 
@@ -95,6 +95,9 @@ const App = () => {
           <ClientForm onClientSubmit={handleClientSubmit} setForm={setForm} />
         </div>
       )}
+
+      <Header text='Envolturas' />
+      <Wraps />
     </main>
   );
 };

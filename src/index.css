@@ -10,6 +10,11 @@ body {
   background-color: hsl(217, 54%, 11%);
 }
 
+.highlight {
+  color:#ffb703;
+  font-weight: 900;
+}
+
 .dark {
   color: hsl(215, 51%, 70%);
 }
