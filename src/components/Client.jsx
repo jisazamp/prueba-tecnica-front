@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 const Client = ({ client }) => {
-  return <div>{client.name}</div>;
+  return <div>{`${client.name}, $${client.budget}`}</div>;
 };
 
 Client.propTypes = {
