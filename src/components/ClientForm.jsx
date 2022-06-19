@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const ClientForm = ({ setForm, onClientSubmit }) => {
+const ClientForm = ({ editClient, setForm, onClientSubmit }) => {
   const [client, setClient] = useState({ name: '', budget: '' });
 
   const handleClientSubmit = (e) => {
@@ -42,7 +42,9 @@ const ClientForm = ({ setForm, onClientSubmit }) => {
             onChange={handleClientChange}
           />
         </div>
-        <input className='btn btn-primary' type='submit' />
+        <button className='btn btn-primary' type='submit'>
+          {editClient ? 'Editar' : 'Agregar'}
+        </button>
       </form>
     </div>
   );

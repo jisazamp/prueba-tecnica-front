@@ -40,6 +40,13 @@ body {
   font-size: 0.8rem;
 }
 
+.btn-secondary {
+  margin-top: 0;
+  background-color: hsl(217, 54%, 11%);
+  color: white;
+  width: 25%;
+}
+
 .container {
   max-width: 100rem;
   margin: auto;
@@ -85,6 +92,34 @@ body {
 
 ::placeholder {
   opacity: 0.4;
+}
+
+.client-container {
+  border-radius: 0.5em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.client-container:hover {
+  transition: all 200ms ease-in;
+}
+
+.client__info {
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+}
+
+.client__info:hover {
+  transition: background-color 200ms ease-in;
+  background-color:hsl(215, 51%, 90%);
+}
+
+.product-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 @media (min-width: 40rem) {

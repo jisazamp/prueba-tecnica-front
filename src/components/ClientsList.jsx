@@ -7,13 +7,19 @@ const ClientsList = ({
   form,
   clients,
   onClientSubmit,
+  onClientEdit,
   onChocolateFeast,
   setForm,
 }) => {
   return (
     <div className='content-container'>
       {clients.map((e) => (
-        <Client key={e.id} client={e} onChocolateFeast={onChocolateFeast} />
+        <Client
+          key={e.id}
+          client={e}
+          onClientEdit={onClientEdit}
+          onChocolateFeast={onChocolateFeast}
+        />
       ))}
 
       {!form && (

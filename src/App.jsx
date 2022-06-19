@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import Header from './components/common/Header';
 import ClientsList from './components/ClientsList';
 import Wraps from './components/Wraps';
+import Products from './components/Products';
 import ClientForm from './components/ClientForm';
 import ChocolateFeast from './components/ChocolateFeast';
 
@@ -74,11 +75,16 @@ const App = () => {
     <main className='container'>
       <Header text='Chocolate Feast' color='dark' />
 
-      {chocolateFeast > 0 && (
+      {chocolateFeast > 0 ? (
         <ChocolateFeast
           currentClient={currentClient}
           chocolateFeast={chocolateFeast}
         />
+      ) : (
+        <div className='content-container'>
+          El usuario seleccionado no tiene ordenes, registre alguna para poder
+          realizar el cálculo
+        </div>
       )}
 
       <Header text='Usuarios' />
@@ -98,6 +104,9 @@ const App = () => {
 
       <Header text='Envolturas' />
       <Wraps />
+
+      <Header text='Productos' />
+      <Products />
     </main>
   );
 };
